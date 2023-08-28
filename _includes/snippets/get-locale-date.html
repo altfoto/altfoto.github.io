@@ -1,0 +1,27 @@
+{%- comment -%}
+  Сніпіт локалізує назви місяців та днів тижднів.
+  Назви зберігаються у _data\locale.yml
+
+  Сніпіт викликається завжди після snippets/get-locale-string.html
+  оскільки використовуються його сл. змінні:
+    - _lang
+    - __return
+{%- endcomment -%}
+{%- assign _local_month = include.element.date | date: "%-m" | minus: 1 -%}
+{%- assign _local_day_week = include.element.date | date: "%-w" | minus: 0 -%}
+{%- assign _local_lang_month_shot = site.data.locale[_lang]['MONTHS_SHOT'][_local_month] -%}
+{%- assign _local_lang_month      = site.data.locale[_lang]['MONTHS'][_local_month] -%}
+{%- assign _local_lang_day_shot   = site.data.locale[_lang]['DAYS_SHOT'][_local_day_week] -%}
+{%- assign _local_lang_day        = site.data.locale[_lang]['DAYS'][_local_day_week] -%}
+{%- if _local_lang_month_shot != nil -%}
+ {%- assign __return = __return | replace: "%b", _local_lang_month_shot -%}
+{%- endif -%}
+{%- if _local_lang_month != nil -%}
+ {%- assign __return = __return | replace: "%B", _local_lang_month -%}
+{%- endif -%}
+{%- if _local_lang_day_shot != nil -%}
+ {%- assign __return = __return | replace: "%a", _local_lang_day_shot -%}
+{%- endif -%}
+{%- if _local_lang_day != nil -%}
+ {%- assign __return = __return | replace: "%A", _local_lang_day -%}
+{%- endif -%}

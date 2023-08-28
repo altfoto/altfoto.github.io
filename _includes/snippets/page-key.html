@@ -1,0 +1,5 @@
+{%- assign __return = page.key -%}
+{%- unless __return -%}
+    {%- assign __return = page.date | date: "%Y-%m-%d-" | append: page.slug -%}
+{%- endunless -%}
+{{ __return }}

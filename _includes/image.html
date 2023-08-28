@@ -1,0 +1,15 @@
+{%- comment -%}
+    Insert figure containing an image, taking optional link and caption text.
+{%- endcomment -%}
+{%- assign _alt = include.alt -%}
+{%- if _alt == nil -%}
+ {%- assign _alt = include.caption -%}
+{%- endif -%}
+<figure style="text-align: center; margin: 10px auto;">
+  <img
+    src="{{ include.src }}"
+    alt="{{ _alt | strip_html | escape }}"
+    style="margin-left: auto; margin-right: auto; {{ include.style }}"
+    >
+  <figcaption style="font-style: italic;">{{ include.caption }}</figcaption>
+</figure>
