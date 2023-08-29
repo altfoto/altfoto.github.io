@@ -7,6 +7,11 @@ article_header:
   image:
     src: /images/yevonde-life-and-colour-exhibition/cover-header.jpg
 
+og:
+  title:
+  description: У Національній Портретній Галереї у Лондоні відкрилася виставка робіт фотографині Йовонди Міддлтон.
+  image: /images/yevonde-life-and-colour-exhibition/cover-og.jpg
+
 tags:
   - виставка
   - карбон
