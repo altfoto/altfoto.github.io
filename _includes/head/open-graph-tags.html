@@ -1,32 +1,41 @@
-<meta content="{{ site.title | strip_html | strip | strip_newlines | escape }}" property="og:site_name">
+<meta property="og:site_name" content="{{ site.title | strip_html | strip | strip_newlines | escape }}">
+
+{%- assign __title = site.title -%}
+{%- if page.og.title -%}
+  {%- assign __title = page.og.title -%}
+{%- elsif page.title -%}
+  {%- assign __title = page.title -%}
+{% endif %}
+<meta property="og:title" content="{{ __title | strip_html | strip | strip_newlines | escape }}">
 {% if page.title -%}
-  <meta content="{{ page.title | strip_html | strip | strip_newlines | escape }}" property="og:title">
+  <meta property="og:type" content="article">
 {% else -%}
-  <meta content="{{ site.title | strip_html | strip | strip_newlines | escape }}" property="og:title">
+  <meta property="og:type" content="website">
 {% endif -%}
-{% if page.title -%}
-  <meta content="article" property="og:type">
-{% else -%}
-  <meta content="website" property="og:type">
+
+{%- assign __descr = site.description -%}
+{%- if page.og.description -%}
+  {%- assign __descr = page.og.description -%}
+{%- elsif page.description -%}
+  {%- assign __descr = page.description -%}
+{%- elsif page.excerpt -%}
+  {%- assign __descr = page.excerpt -%}
 {% endif -%}
-{% if page.excerpt -%}
-  <meta content="{{ page.excerpt | strip_html | strip | escape }}" property="og:description">
-{% elsif page.description -%}
-  <meta content="{{ page.description | strip_html | strip | escape }}" property="og:description">
-{% else -%}
-  <meta content="{{ site.description | strip_html | strip | escape }}" property="og:description">
-{% endif -%}
+<meta property="og:description" content="{{ __descr | strip_html | strip | escape }}">
 {% if page.url -%}
-  <meta content="{{ page.url | absolute_url }}" property="og:url">
-{% endif -%}
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+{%- endif -%}
+{%- assign __image = site.image -%}
+{% if page.og.image %}
+  {%- assign __image = page.og.image -%}
+{% elsif page.title %}
+  {%- assign __image = page.cover -%}
+{% endif %}
+<meta property="og:image" content="{{ __image | absolute_url }}">
+
 {% if page.date -%}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
   <meta content="{{ site.url }}/about/" property="article:author">
-{% endif -%}
-{% if page.cover -%}
-  <meta content="{{ page.cover | absolute_url }}" property="og:image">
-{% else -%}
-  <meta content="{{ site.image | absolute_url }}" property="og:image">
 {% endif -%}
 {% if page.categories -%}
   {% for category in page.categories limit:1 -%}
