@@ -1,6 +1,7 @@
 ---
 layout: article
 titles: Про сайт
+show_title: false
 
 article_header:
   type: cover
