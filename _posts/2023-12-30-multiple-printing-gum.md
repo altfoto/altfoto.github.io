@@ -16,15 +16,6 @@ tags:
   - гуміарабік
   - друк
 
-carousels:
-  - images:
-    - image: /images/multiple-printing-gum/gallery-1-1.jpg
-    - image: /images/multiple-printing-gum/gallery-1-2.jpg
-    - image: /images/multiple-printing-gum/gallery-1-3.jpg
-    - image: /images/multiple-printing-gum/gallery-1-4.jpg
-  - images:
-
-
 ---
 
 Переклад [статті](https://printmakersfriend.com/instructions/) Кельвіна Грієра, присвяченої розвитку методу багатошарового гуміарабікового друку з одиничною проявкою. Наведено короткий опис процесу калібрування та друку на основі струменевого і срібловмісного негативу. В якості емульсії використовується класичний розчин гуміарабіку та готова емульсія PrintMaker's Friend.
