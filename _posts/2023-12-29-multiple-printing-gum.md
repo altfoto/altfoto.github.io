@@ -1,7 +1,7 @@
 ---
 title: Багатошаровий гуміарабіковий друк з одиничною проявкою
 permalink: /multiple-printing-gum/
-cover: /images/multiple-printing-gum/cover-post.jpg
+cover: /images/multiple-printing-gum/cover-post-old.jpg
 article_header:
   type: cover
   image:
