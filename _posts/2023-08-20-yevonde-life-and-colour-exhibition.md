@@ -1,5 +1,5 @@
 ---
-title: Йовонда, життя та колір
+title: Йовонда, життя і колір
 permalink: /yevonde-life-and-colour-exhibition/
 cover: /images/yevonde-life-and-colour-exhibition/cover-post.jpg
 article_header:
