@@ -27,7 +27,6 @@ carousels:
     - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.16.23+PM.jpg
     - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.57.43+PM.jpg
     - image: /images/camera-the-movie/Screenshot+2023-12-08+at+12.46.09+PM.jpg
-    - image:
   - images:
     - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.08.19+PM.jpg
     - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.38.35+PM.jpg
