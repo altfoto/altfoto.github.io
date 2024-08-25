@@ -19,21 +19,21 @@ tags:
 
 carousels:
   - images:
-    - image:Screenshot+2023-12-08+at+3.08.19+PM.jpg
-    - image:Screenshot+2023-12-08+at+4.27.20+PM.jpg
-    - image:Screenshot+2023-12-08+at+4.29.20+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.08.19+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+4.27.20+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+4.29.20+PM.jpg
   - images:
-    - image: Screenshot+2023-12-06+at+1.22.15+PM.jpg
-    - image: Screenshot+2023-12-08+at+3.16.23+PM.jpg
-    - image: Screenshot+2023-12-08+at+3.57.43+PM.jpg
-    - image: Screenshot+2023-12-08+at+12.46.09+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-06+at+1.22.15+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.16.23+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.57.43+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+12.46.09+PM.jpg
     - image:
   - images:
-    - image:Screenshot+2023-12-08+at+3.08.19+PM.jpg
-    - image:Screenshot+2023-12-08+at+3.38.35+PM.jpg
-    - image:Screenshot+2023-12-08+at+3.56.23+PM.jpg
-    - image:Screenshot+2023-12-08+at+12.39.56+PM.jpg
-    - image:Screenshot+2023-12-08+at+12.45.21+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.08.19+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.38.35+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+3.56.23+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+12.39.56+PM.jpg
+    - image: /images/camera-the-movie/Screenshot+2023-12-08+at+12.45.21+PM.jpg
 
 
 ---
